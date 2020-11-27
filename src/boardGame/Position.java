@@ -1,9 +1,11 @@
 package boardGame;
 
 public class Position {
+	//encapsulamento com private
 	private int row;
 	private int column;
 	
+	//construtor com argumentos
 	public Position(int row, int column) {
 		this.row = row;
 		this.column = column;
@@ -23,6 +25,7 @@ public class Position {
 		this.column = column;
 	}
 	
+	//sobrescrita do método toString da classe object
 	@Override
 	public String toString() {
 		return row + ", " + column;
